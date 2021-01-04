@@ -18,13 +18,20 @@
                 document.querySelector("#twotabsearchtextbox").focus();
             }
             else if(window.location.hostname === "www.youtube.com" ) {
-                document.querySelector("input#search.ytd-searchbox").focus();
+                   //document.querySelector("input#search.ytd-searchbox").focus();
+                document.querySelector("input#search").focus();
             }
             else if(window.location.hostname === "www.google.co.in"){
                 document.querySelector("#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input").focus();
             }
             else if(window.location.hostname === "www.google.com"){
                 document.querySelector("#tsf > div:nth-child(2) > div.A8SBwf > div.RNNXgb > div > div.a4bIc > input").focus();
+            }
+            else if(window.location.hostname === "www.reddit.com"){
+                document.querySelector("input#header-search-bar._2xQx4j6lBnDGQ8QsRnJEJa").focus();
+            }
+            else if(window.location.hostname === "www.hotstar.com"){
+                document.querySelector("#searchField").focus();
             }
             else {
                 console.log("Website not added in the list");
